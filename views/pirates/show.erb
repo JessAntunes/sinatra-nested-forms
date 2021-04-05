@@ -1,7 +1,14 @@
-<h1>Display your Pirate here</h1>
-
-
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<h1>Pirate</h1>
+<h3>Name: <%=params[:pirate][:name]%></h3>
+<h3>Weight: <%=params[:pirate][:weight]%></h3>
+<h3>Height: <%=params[:pirate][:height]%></h3>
+</br>
+<h2>First Ship</h2>
+<h3>Name: <%=params[:pirate][:ships][0][:name]%></h3>
+<h3>Type: <%=params[:pirate][:ships][0][:type]%></h3>
+<h3>Booty: <%=params[:pirate][:ships][0][:booty]%></h3>
+</br>
+<h2>Second Ship</h2>
+<h3>Name: <%=params[:pirate][:ships][1][:name]%></h3>
+<h3>Type: <%=params[:pirate][:ships][1][:type]%></h3>
+<h3>Booty: <%=params[:pirate][:ships][1][:booty]%></h3>
